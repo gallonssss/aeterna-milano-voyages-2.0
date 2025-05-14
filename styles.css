@@ -1,0 +1,130 @@
+/* Reset delle impostazioni di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font e colori principali */
+body {
+    font-family: 'Crimson Pro', serif;
+    background-color: #f9f3e0;
+    color: #2e2e2e;
+}
+
+a {
+    text-decoration: none;
+    color: #b18f4a;
+}
+
+header {
+    background-color: #b18f4a;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Home Section */
+.home-section {
+    background-color: #b18f4a;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.home-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sezioni Generali */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #b18f4a;
+    margin-bottom: 30px;
+}
+
+.destinazione {
+    margin-bottom: 30px;
+}
+
+.destinazione h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #b18f4a;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2e2e2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Rende il sito responsivo su dispositivi mobili */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-section h2 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .destinazione h3 {
+        font-size: 1.5rem;
+    }
+}
